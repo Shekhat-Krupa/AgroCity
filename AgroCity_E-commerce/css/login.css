@@ -27,7 +27,7 @@ body{
     border: 2px solid #000000;
     outline: none;
 }
-/*button{
+button{
     color: #fff;
     width: 100%;
     padding:  10px;
@@ -37,7 +37,7 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-}*/
+}
 .signin-btn{
     background-color: #1c8adb;
     border-radius: 20px;
@@ -54,7 +54,7 @@ img{
     margin-top: -70px;
     border-radius: 100%;
 }
-/*.login{
+.login{
     width: 300px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: #fff;
@@ -70,4 +70,6 @@ img{
 .login-btn{
     background-color: #1c8adb;
 }
-*/
+.text-right{
+    text-align: right;
+}

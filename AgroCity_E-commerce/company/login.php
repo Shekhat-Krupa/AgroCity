@@ -4,7 +4,7 @@
 <!DOCTYPE html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - Food Order System</title>
+        <title>Login - Login System</title>
         <link rel="stylesheet" href="../css/company.css">
         <link rel="stylesheet" href="../css/login.css">
     </head>
@@ -33,7 +33,8 @@
                 <input type="text" class="input-box" name="username" placeholder="Enter Username">
                 Password: <br>
                 <input type="password" class="input-box" name="password" placeholder="Enter Password">
-                <input type="submit" class="signin-btn" name="submit" value="Login" class="btn-primary"><br><br>
+                <input type="submit" class="signin-btn" name="submit" value="Login" class="btn-primary"><br>
+                <p class="text-right"><a href="forget-password.php">Forget password?</p><br>
             </form>
             <!-- login form ens  -->
 
@@ -41,18 +42,6 @@
            
             <p class="text-center">All rights reserved <a href="#">&copy;AgroCity</a></p>
         </div>
-        <!-- <div class="sign-in-formc">
-            <img src="../images/user-icon1.png" alt="Avatar">
-            <h1>Login </h1>
-
-
-            <p>All rights reserved <a href="#">&copy;AgroCity</a></p>
-            <form>
-                <input type="text" class="input-box" placeholder="Email">
-                <input type="text" class="input-box" placeholder="Password"><br>
-                <input type="submit" name="submit" value="Log in" class="signin-btn">
-            </form>
-        </div> -->
     </body>
 </html>
 <?php
@@ -79,11 +68,11 @@
         if ($count==1)
         {
             //user exists and logged in successfully
-            $_SESSION['login'] = "<div class='success text-center'>  Login Successfully!! </div>";
+            //$_SESSION['login'] = "<div class='success text-center'>  Login Successfully!! </div>";
             $_SESSION['user'] = $username;//to check the user is loged in or not
 
             //redirect to home page
-            header('Location:'.SITEURL.'company/manage-product.php');
+            header('Location:'.SITEURL.'company/homepage.php');
         }
         else{
             //user not exist and logged in failed
@@ -92,6 +81,5 @@
             header('Location:'.SITEURL.'company/login.php');
         }
     }
-
 
 ?>

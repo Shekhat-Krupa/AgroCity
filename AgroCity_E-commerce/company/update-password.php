@@ -1,6 +1,29 @@
-<?php include('partitals/menu.php'); ?>
+<?php
+ 
+    include('../config/constant.php'); 
+    //include('login-check.php');
+
+?>
+<html>
+    <head>
+        <title>Agrocity</title>
+        <link rel="stylesheet" href="../css/company.css">
+    </head>
+    <body>
+        <div class="menu text-center">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="../index.php">Home</a></li>
+                    <!--<li><a href="manage-company.php">Company</a></li>-->
+                    <!--<li><a href="manage-product.php">Product</a></li>-->
+                    <!--<li><a href="manage-order.php">Order</a></li>-->
+                    <!-- <li><a href="logout.php">Logout</a></li>  -->
+                </ul>
+            </div>
+        </div>
 <div class="main-content">
     <div class="wrapper">
+        <div class="sign-up-formc">
         <h1>Change Password</h1>
         <br/>
 
@@ -10,26 +33,27 @@
                 $id=$_GET['id'];
             }
         ?>
-
+        
         <form action="" method="post">
             <table class="tbl">
                 <tr>
-                    <td><input type="password" name="current_password" class="input-box" placeholder="Current Password"></td>
+                    <td><input type="password" name="current_password" class="input-box1" placeholder="Current Password"></td>
                 </tr>
                 <tr>
-                    <td><input type="password" name="new_password" class="input-box" placeholder="New Password"></td>
+                    <td><input type="password" name="new_password" class="input-box1" placeholder="New Password"></td>
                 </tr>
                 <tr>
-                    <td><input type="password" name="confirm_password" class="input-box" placeholder="Confirm Password"></td>
+                    <td><input type="password" name="confirm_password" class="input-box1" placeholder="Confirm Password"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <input type="hidden" name="id" value="<?php echo $id?>">
-                        <input type="submit" name="submit" value="Change Password" class="btn-third">
+                        <input type="submit" name="submit" value="Change Password" class="signup-btn">
                     </td>
                 </tr>
             </table>
         </form>
+        </div>
     </div>
 </div>
 <?php

@@ -35,7 +35,7 @@ table tr td{
     font-weight: bold;
 }
 .btn-secondary:hover{
-    background: #2faa0a;
+    background: #0a17aa;
 }
 .btn-secondary{
     background-color: #1e90fe;
@@ -45,7 +45,7 @@ table tr td{
     font-weight: bold;
 }
 .danger:hover{
-    background: #1e90fe;
+    background: #0a17aa;
 }
 .danger{
     background-color: #2faa0a;
@@ -55,10 +55,14 @@ table tr td{
     font-weight: bold;
 }
 .btn-primary:hover{
-    background: #1e90fe;
+    background: #0a17aa;
 }
 .tbl{
     width: 30%;
+}
+.left{
+    width: 700px;
+    color: #0a17aa;
 }
 .input-box{
     border-radius: 20px;
@@ -68,6 +72,121 @@ table tr td{
     border: 2px solid #999;
     outline: none;
 }
+.input-box2{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3px 0;
+    width: 100%;
+    border: 2px solid #999;
+    outline: none;
+}
+.input-box1{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 290px;
+    border: 1px solid #999;
+    outline: none;
+}
+.sign-up-formc{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 25px;
+    margin: 5% auto 0;
+    text-align: center;
+}
+.sign-up-formc h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+img{
+    width: 100px;
+    margin-top: -70px;
+    border-radius: 100%;
+}
+
+.signup-btn{
+    background-color: #1c8adb;
+    color: #fff;
+    width: 290px;
+    padding:  10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.signup-btn1{
+    background-color: #1c8adb;
+    color: #fff;
+    width: 400px;
+    padding:  10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+hr{
+    margin-top: 20px;
+    width: 100%;
+}
+.or{
+    background: #fff;
+    width: 1%;
+    margin: -19px auto 10px;
+}
+.add-formc{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 25px;
+    margin: 5% auto 0;
+    text-align: center;
+}
+.add-formc h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+/*.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.radio-custom-label {
+    position: relative;
+}
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+.radio-custom:focus + .radio-custom-label {
+    outline: 1px solid #ddd; /* focus style 
+}*/
 .btn-third{
     background-color: #ff7c1e;
     border-radius: 20px;

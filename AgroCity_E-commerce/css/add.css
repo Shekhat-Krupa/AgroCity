@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    padding: 1%;
+    width: 85%;
+    margin: 1 auto;
+    padding-right: 900%;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*manage-company*/
+.tbl-full{
+    width: 500%;
+}
+.tbl-full1{
+    width: 115%;
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+.btn-primary{
+    background-color: #ff7c1e;
+    padding: 1%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background: #0a17aa;
+}
+.btn-secondary{
+    display: block;
+    background-color: #1e90fe;
+    padding: 3%;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.danger:hover{
+    background: #0a17aa;
+}
+.danger{
+    background-color: #2faa0a;
+    padding: 1%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background: #0a17aa;
+}
+.tbl{
+    width: 30%;
+}
+.left{
+    width: 700px;
+    color: #0a17aa;
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3px 0;
+    width: 95%;
+    border: 2px solid #999;
+    outline: none;
+}
+.input-box2{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3px 0;
+    width: 100%;
+    border: 2px solid #999;
+    outline: none;
+}
+.input-box1{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 290px;
+    border: 1px solid #999;
+    outline: none;
+}
+.sign-up-formc{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 25px;
+    margin: 5% auto 0;
+    text-align: center;
+}
+.sign-up-formc h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+.img-add{
+    width: 20px;
+    margin-top: 0px;
+    /*border-radius: 100%;*/
+    padding-right: 80px;
+}
+.img-add1{
+    width: 20px;
+    margin-top: 0px;
+    /*border-radius: 100%;*/
+    padding-right: 80px;
+}
+/*img{
+    width: 100px;
+    margin-top: -70px;
+    border-radius: 100%;
+}*/
+.signup-btn{
+    background-color: #1c8adb;
+    color: #fff;
+    width: 290px;
+    padding:  10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+hr{
+    margin-top: 20px;
+    width: 100%;
+}
+.or{
+    background: #fff;
+    width: 1%;
+    margin: -19px auto 10px;
+}
+.add-formc{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 25px;
+    margin: 5% auto 0;
+    text-align: center;
+}
+.add-formc h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+/*.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.radio-custom-label {
+    position: relative;
+}
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+.radio-custom:checked + .radio-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    color: #bbb;
+}
+.radio-custom:focus + .radio-custom-label {
+    outline: 1px solid #ddd; /* focus style 
+}*/
+.btn-third{
+    background-color: #ff7c1e;
+    border-radius: 20px;
+    padding: 3%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-third:hover{
+    background: #1e90fe;
+}
+.success{
+    color: #2ed573;
+}
+.error{
+    color: #ff4757;
+}
+/*for menu*/
+.menu{
+    border-bottom: 1px solid gray;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: orangered;
+}
+.menu ul li a:hover{
+    color: orangered;
+}
+/*for main content*/
+.main-content{
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+.col-4{
+    width: 20%;
+    background-color: #fff;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+/*.login{
+    border: 1px solid gray;
+    width: 20%;
+    margin: 5% auto;
+    padding: 2%;
+}*/

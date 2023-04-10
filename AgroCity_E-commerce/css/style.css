@@ -1,268 +1,200 @@
 *{
-    margin: 0 0;
-    padding: 0 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #ffffff;
+    color:#f78902;
+}
+/* --------------------------- header ----------------------- */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/backgroung.png);
+    background-size: cover;
+    background-position: center;
 }
 .container{
-    width: 80%;
-    margin: 0 auto;
-    padding: 1%;
+    padding:10px 10% !important;
 }
-.img-responsive{
-    width: 100%;
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.img-curve{
-    border-radius: 15px;
+nav img{
+    width: 20%;
 }
-
-.text-right{
-    text-align: right;
-}
-.text-center{
-    text-align: center;
-}
-.text-left{
-    text-align: left;
-}
-.text-white{
-    color: white;
-}
-
-.clearfix{
-    clear: both;
-    float: none;
-}
-
-a{
-    color: #ff6b81;
-    text-decoration: none;
-}
-a:hover{
-    color: #ff4757;
-}
-
-.btn{
-    padding: 1%;
-    border: none;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-.btn-primary{
-    background-color: #ff6b81;
-    color: white;
-    cursor: pointer;
-}
-.btn-primary:hover{
-    color: white;
-    background-color: #ff4757;
-}
-h2{
-    color: #2f3542;
-    font-size: 2rem;
-    margin-bottom: 2%;
-}
-h3{
-    font-size: 1.5rem;
-}
-.float-container{
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
     position: relative;
 }
-.Describe{
-    color: #fff;
-    text-shadow: 0 4px 6px rgba(0,0,0,.5);
+nav ul li a{
+    color: #12410b;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px; 
+    position: relative;
 }
-.float-text{
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f78902;
     position: absolute;
-    bottom: 50px;
-    left: 40%;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
 }
-fieldset{
-    border: 1px solid white;
-    margin: 5%;
-    padding: 3%;
-    border-radius: 5px;
+nav ul li a:hover::after{
+    width: 100%;
 }
-
-
-/* CSSS for navbar section */
-
-.logo{
-    width: 10%;
-    float: left;
+.header-text{
+    margin-top: 15%;
+    font-size: 30px;
 }
-.menu{
-    line-height: 60px;
+.header-text h1{
+    margin-bottom: 20px;
+    text-align:center;
+    margin-top: 20px;
+    font-size: 60px;
 }
-.menu ul{
-    list-style-type: none;
+.header-text h1 span{
+    color: #12410b;
 }
-
-.menu ul li{
-    display: inline;
-    padding: 1%;
-    font-weight: bold;
+.header-text p{
+    font-size: 25px;
+    text-align:center;
+    color: black;
 }
-
-
-/* CSS for crop SEarch Section */
-
-.crop-search{
-    background-image: url(../images/crops.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 7% 0;
+/* ------------------------------ About Me -------------------------- */
+#about{
+    padding: 10px 0;
+    color: #000000;
 }
-
-.crop-search input[type="search"]{
-    width: 50%;
-    padding: 1%;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-
-
-/* CSS for Categories */
-.categories{
-    padding: 30px 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: -15px;
-    padding: 4% 0;
-}
-.categories div{
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 300;
-    border-radius: 10px;
-}
-.categories div .box-3{
-    height: 200px;
-    width: 29%;
-    padding: 13px;
+.row{
     display: flex;
-    float:left;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
-
-/* CSS for Food Menu */
-.food-menu{
-    background-color: #ececec;
-    padding: 4% 0;
+.about-col-1{
+    flex-basis: 35%;
 }
-.food-menu-box{
-    width: 43%;
-    margin: 1%;
-    padding: 2%;
-    float: left;
-    background-color: white;
+.about-col-1 img{
+    width: 50%;
     border-radius: 15px;
 }
-
-.food-menu-img{
-    width: 20%;
-    float: left;
+.about-col-2{ 
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 4 0px;
+    font-weight: 600;
+    color: #f78902;
 }
 
-.food-menu-desc{
-    width: 70%;
-    float: left;
-    margin-left: 8%;
+.sub-title span{
+    color: #12410b;
 }
-
-.food-price{
-    font-size: 1.2rem;
-    margin: 2% 0;
+.sub-title p{
+    
+    font-size: 20px;
+    color: #000000;
 }
-.food-detail{
-    font-size: 1rem;
-    color: #747d8c;
+/* -------------------- contact -------------------- */
+.contact-left{
+    flex-basis: 35%;
 }
-
-
-/* CSS for Social */
-.social ul{
-    list-style-type: none;
+.contact-right{
+    flex-basis: 60%;
 }
-.social ul li{
-    display: inline;
-    padding: 1%;
+.contact-left p{
+    color: #000000;
+    margin-top: 30px;
 }
-
-/* for Order Section */
-.order{
-    width: 50%;
-    margin: 0 auto;
+.contact-left p i{
+    color: #12410b;
+    margin-right: 15px;
+    font-size: 25px;
 }
-.input-responsive{
-    width: 96%;
-    padding: 1%;
-    margin-bottom: 3%;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+.social-icons{
+    margin-top: 30px;   
 }
-.order-label{
-    margin-bottom: 1%; 
-    font-weight: bold;
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #12410b;
+    display: inline-block;  
+    transition: transform 0.5s;
 }
-
-
-
-/* CSS for Mobile Size or Smaller Screen */
-
-@media only screen and (max-width:768px){
-    .logo{
-        width: 80%;
-        float: none;
-        margin: 1% auto;
-    }
-
-    .menu ul{
-        text-align: center;
-    }
-
-    .food-search input[type="search"]{
-        width: 90%;
-        padding: 2%;
-        margin-bottom: 3%;
-    }
-
-    .btn{
-        width: 91%;
-        padding: 2%;
-    }
-
-    .food-search{
-        padding: 10% 0;
-    }
-
-    .categories{
-        padding: 20% 0;
-    }
-    h2{
-        margin-bottom: 10%;
-    }
-    .box-3{
-        width: 100%;
-        margin: 4% auto;
-    }
-
-    .food-menu{
-        padding: 20% 0;
-    }
-
-    .food-menu-box{
-        width: 90%;
-        padding: 5%;
-        margin-bottom: 5%;
-    }
-    .social{
-        padding: 5% 0;
-    }
-    .order{
-        width: 100%;
-    }
+.social-icons a:hover{
+    color: #5fa13e;
+    transform: translateY(-5px);
+}
+.btn2{
+    display: inline-block;
+    background: #61a854 ;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #d1dabf;
+    padding: 15px;
+    margin: 15px 0;
+    color: #12410b;
+    font-size: 17px;
+    border-radius: 8px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background:#d1dabf;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright p{
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.copyright span{
+    color: #f78902
+}
+.copyright .span2{
+    color: #12410b
+}
+.login-btn{
+    background-color: #1c8adb;
+}
+.login{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 35px;
+    margin: 13% auto 0;
+    text-align: center;
+}
+.login h1{
+    color: #0c2283;
+    margin-bottom: 30px;
+    font-size: 40px;
 }
